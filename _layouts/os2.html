@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% assign banner_url = page.banner | relative_url | default: "/assets/img/banner.jpg" %}
+
+<!-- Hero Banner Section -->
+<section
+  class="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
+  style="background-image: url('{{ banner_url }}');"
+>
+  <div class="bg-black/50 p-8 rounded-lg text-center max-w-2xl">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      {{ page.title | default: "Welcome to My Site" }}
+    </h1>
+    <p class="text-lg md:text-xl">
+      {{ page.subtitle | default: "Your subtitle or mission statement goes here." }}
+    </p>
+  </div>
+</section>
+
+<!-- Blog Section -->
+{% if site.posts.size > 0 %}
+<section id="blog" class="container mx-auto py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">
+    {{ site.data[site.active_lang].strings.home.blog_title | default: site.data['en'].strings.home.blog_title }}
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    {% for post in site.posts limit:3 %}
+      {% include post_card.html post=post %}
+    {% endfor %}
+  </div>
+  {% assign blog_page = site.pages | where: 'layout', 'blog' | first %}
+  {% if blog_page %}
+  <div class="text-center mt-8">
+    <a class="text-lg font-bold text-sky-500 hover:underline" href="{{ blog_page.url | relative_url }}">
+      {{ site.data[site.active_lang].strings.home.see_more_posts | default: site.data['en'].strings.home.see_more_posts }}
+    </a>
+  </div>
+  {% endif %}
+</section>
+{% endif %}
+
+<!-- Projects Section -->
+{% if site.projects.size > 0 %}
+<section id="projects" class="container mx-auto py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">
+    {{ site.data[site.active_lang].strings.home.projects_title | default: site.data['en'].strings.home.projects_title }}
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {% for project in site.projects limit:2 %}
+      {% include project_card.html project=project %}
+    {% endfor %}
+  </div>
+  <div class="text-center mt-8">
+    <a class="text-lg font-bold text-sky-500 hover:underline" href="{{ '/projects' | relative_url }}">
+      {{ site.data[site.active_lang].strings.home.see_more_projects | default: site.data['en'].strings.home.see_more_projects }}
+    </a>
+  </div>
+</section>
+{% endif %}
