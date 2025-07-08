@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: os2
 title: Home
 description: >-
   Especializado en el desarrollo de API RESTs con Ruby on Rails. He participado
