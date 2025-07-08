@@ -1,0 +1,15 @@
+home:
+  contact_me: "Kontakt:"
+  blog_title: "Seneste nyheder"
+  see_more_posts: "Se flere nyhedsopslag ->"
+  projects_title: "Seneste case"
+  see_more_projects: "Se flere cases ->"
+footer:
+  title: "Kontaktinformationer"
+  description: "Kontakt"
+  pages: Sider
+blog:
+  read_more: "Læs mere ->"
+  more_articles: "Flere nyhedsopslag"
+post:
+  share: Del!
