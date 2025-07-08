@@ -4,12 +4,12 @@ title: Home
 description: >-
   Especializado en el desarrollo de API RESTs con Ruby on Rails. He participado
   en diversas etapas del ciclo de desarrollo de aplicaciones.
-image: /assets/images/main.avif
+image: /assets/images/banner.jpg
 main_content: >
   # OS²Produkt
 
 
-  **OS²Product
+  **OS²Product offers digital solutions for
 
   quoque vestigia substricta caelestique posuisset litore: suaque. **Et
   limine**, et
@@ -20,7 +20,7 @@ main_content: >
 footer: true
 permalink: /
 ---
-## OS²Produkt
+## OS²Product
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat porta lorem, non auctor magna aliquet ac. Nam finibus in massa quis molestie. Vestibulum malesuada iaculis consequat. Phasellus sagittis, nisl non semper vestibulum, tellus enim interdum purus, ac pretium magna lectus ac turpis. Phasellus scelerisque hendrerit magna vitae fermentum. Praesent facilisis erat viverra eros tristique, id faucibus eros volutpat. Duis tempus arcu in felis sollicitudin, in sodales leo scelerisque. Nullam dapibus libero eu iaculis rhoncus.
 
